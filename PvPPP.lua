@@ -225,6 +225,7 @@ PVP:HookScript("OnEvent",function(self,event)
 		UpdateBattleMembers()
 	elseif event == "ZONE_CHANGED_NEW_AREA" then
 		if not UnitInBattleground("player") then
+			InitData()
 			_G["FlagButton_TANK"]:Hide()
 			_G["FlagButton_DAMAGER"]:Hide()
 			_G["FlagButton_HEALER"]:Hide()
